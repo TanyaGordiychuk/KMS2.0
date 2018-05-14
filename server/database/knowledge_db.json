@@ -1,0 +1,492 @@
+[
+  {
+    "name": "David Smith",
+    "photo": "http://yebb.ru/gallery/zak-ehfron/zak-ehfron1.jpg",
+    "b_day": "24.03.1992",
+    "spec": "Front-end developer",
+    "experience": 3,
+    "english": "Upper-Intermediate",
+    "skills": [
+      {
+        "skill_name": "HTML/HTML5",
+        "level": 10
+      },
+      {
+        "skill_name": "CSS/CSS3, SASS",
+        "level": 10
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 9
+      },
+      {
+        "skill_name": "AngularJS",
+        "level": 8
+      },
+      {
+        "skill_name": "ReactJS",
+        "level": 7
+      },
+      {
+        "skill_name": "Java",
+        "level": 3
+      }
+    ],
+    "phone": 380739541221,
+    "email": "davidsmith@gmail.com",
+    "skype": "smith_master"
+  },
+  {
+    "name": "Mary Jayson",
+    "photo": "http://modagid.ru/files/photos/imgs/131/131981/large_Emma_Stone_Amazing_Spider_Man_2_Stars_Sydney_XkKzUjY7CX8x.jpg?1397921544",
+    "b_day": "13.08.1993",
+    "spec": "QA",
+    "experience": 2,
+    "english": "Intermediate",
+    "skills": [
+      {
+        "skill_name": "Test design",
+        "level": 9
+      },
+      {
+        "skill_name": "Defects tracking",
+        "level": 10
+      },
+      {
+        "skill_name": "Requirements analysis",
+        "level": 10
+      },
+      {
+        "skill_name": "Functional testing",
+        "level": 10
+      },
+      {
+        "skill_name": "Automation testing",
+        "level": 5
+      },
+      {
+        "skill_name": "Test scope definition",
+        "level": 8
+      },
+      {
+        "skill_name": "Team communication",
+        "level": 9
+      }
+    ],
+    "phone": 380658985412,
+    "email": "maryme@gmail.com",
+    "skype": "mary_mary"
+  },
+  {
+    "name": "Jessica Wind",
+    "photo": "http://7kingdoms.ru/wp-content/uploads/2011/05/emilia-clarke.jpg",
+    "b_day": "02.01.1990",
+    "spec": "Back-end developer",
+    "experience": 2,
+    "english": "Intermediate",
+    "skills": [
+      {
+        "skill_name": "PHP",
+        "level": 10
+      },
+      {
+        "skill_name": "Laravel",
+        "level": 8
+      },
+      {
+        "skill_name": "HTML,CSS",
+        "level": 7
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 5
+      },
+      {
+        "skill_name": "Yii2",
+        "level": 8
+      },
+      {
+        "skill_name": "Python",
+        "level": 7
+      }
+    ],
+    "phone": 380475214528,
+    "email": "jessica_wind@gmail.com",
+    "skype": "jessica_wind"
+  },
+  {
+    "name": "Mark Jacobs",
+    "photo": "http://www.mypopulars.com/photos/robert-downey-jr/Robert-Downey-Jr-11.jpg",
+    "b_day": "28.05.1983",
+    "spec": "Java developer",
+    "experience": 7,
+    "english": "Advanced",
+    "skills": [
+      {
+        "skill_name": "Java",
+        "level": 10
+      },
+      {
+        "skill_name": "Rest",
+        "level": 10
+      },
+      {
+        "skill_name": "Spring",
+        "level": 10
+      },
+      {
+        "skill_name": "MySQL",
+        "level": 10
+      },
+      {
+        "skill_name": "PingFed",
+        "level": 9
+      },
+      {
+        "skill_name": "HTML/JS/CSS",
+        "level": 9
+      },
+      {
+        "skill_name": "Team communication",
+        "level": 10
+      }
+    ],
+    "phone": 380965487712,
+    "email": "mark_jacobs@gmail.com",
+    "skype": "mark83"
+  },
+  {
+    "name": "Whitney Spilberg",
+    "photo": "https://www.wmj.ru/imgs/2016/12/05/07/891360/6e932bb92baa568e9377a874cf75db0aa3c1aa90.jpg",
+    "b_day": "15.09.1991",
+    "spec": "QA",
+    "experience": 4,
+    "english": "Advanced",
+    "skills": [
+      {
+        "skill_name": "Test design",
+        "level": 10
+      },
+      {
+        "skill_name": "Defects tracking",
+        "level": 10
+      },
+      {
+        "skill_name": "Requirements analysis",
+        "level": 10
+      },
+      {
+        "skill_name": "Functional testing",
+                "level": 10
+      },
+      {
+        "skill_name": "Automation testing",
+        "level": 10
+      },
+      {
+        "skill_name": "Test scope definition",
+        "level": 9
+      },
+      {
+        "skill_name": "Java",
+        "level": 8
+      }
+    ],
+    "phone": 380975482154,
+    "email": "whitney_spilberg@gmail.com",
+    "skype": "miss_whitney"
+  },
+  {
+    "name": "Anton Ivanov",
+    "photo": "https://proxy11.online.ua/parni/r3-125d8e8145/middle_4f212b0e0161c.jpg",
+    "b_day": "12.12.1996",
+    "spec": "Front-end developer",
+    "experience": 0.5,
+    "english": "Intermediate",
+    "skills": [
+      {
+        "skill_name": "HTML/HTML5",
+        "level": 9
+      },
+      {
+        "skill_name": "CSS/CSS3, SASS",
+        "level": 9
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 8
+      },
+      {
+        "skill_name": "AngularJS",
+        "level": 7
+      },
+      {
+        "skill_name": "ReactJS",
+        "level": 2
+      },
+      {
+        "skill_name": "C++",
+        "level": 3
+      }
+    ],
+    "phone": 380632589656,
+    "email": "anton_ivanov@gmail.com",
+    "skype": "antonytheboss"
+  },
+  {
+    "name": "Ivan Shevchenko",
+    "photo": "http://kinoafisha.ua/upload/persons/1120/src_1404335387rayan-reynolds.jpg",
+    "b_day": "14.07.1981",
+    "spec": "Java developer",
+    "experience": 7,
+    "english": "Advanced",
+    "skills": [
+      {
+        "skill_name": "Java",
+        "level": 10
+      },
+      {
+        "skill_name": "Rest",
+        "level": 10
+      },
+      {
+        "skill_name": "Spring",
+        "level": 10
+      },
+      {
+        "skill_name": "MySQL",
+        "level": 10
+      },
+      {
+        "skill_name": "PingFed",
+        "level": 9
+      },
+      {
+        "skill_name": "HTML/JS/CSS",
+        "level": 9
+      }
+    ],
+    "phone": 380678545589,
+    "email": "ivan_shevchenko@gmail.com",
+    "skype": "shevchenko_ivan"
+  },
+  {
+    "name": "Mike Oslo",
+    "photo": "http://i3.mirror.co.uk/incoming/article3107497.ece/ALTERNATES/s615b/Heath-Ledger.jpg",
+    "b_day": "12.10.1988",
+    "spec": ".Net developer",
+    "experience": 5,
+    "english": "Upper-Intermediate",
+    "skills": [
+      {
+        "skill_name": ".NET",
+        "level": 10
+      },
+      {
+        "skill_name": "C#",
+        "level": 9
+      },
+      {
+        "skill_name": "Visual Studio",
+        "level": 9
+      },
+      {
+        "skill_name": "TFS",
+        "level": 10
+      },
+      {
+        "skill_name": "HTML/CSS",
+        "level": 7
+      },
+      {
+        "skill_name": "JS",
+        "level": 6
+      }
+    ],
+    "phone": 380502154478,
+    "email": "mile_oslo@gmail.com",
+    "skype": "oslo_city"
+  },
+  {
+    "name": "Masha Petrenko",
+    "photo": "http://cdn-new.vokrug.tv/pic/person/3/2/8/0/3280dea5ab6b004d15ce31fb366b7fb5.jpeg",
+    "b_day": "30.04.1997",
+    "spec": "Back-end developer",
+    "experience": 0.5,
+    "english": "Intermediate",
+    "skills": [
+      {
+        "skill_name": "PHP",
+        "level": 8
+      },
+      {
+        "skill_name": "Laravel",
+        "level": 5
+      },
+      {
+        "skill_name": "HTML,CSS",
+        "level": 7
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 4
+      },
+      {
+        "skill_name": "Yii2",
+        "level": 5
+      },
+      {
+        "skill_name": "Python",
+        "level": 7
+      }
+    ],
+    "phone": 380454885622,
+    "email": "masha_petrenko@gmail.com",
+    "skype": "great_masha"
+  },
+  {
+    "name": "Alex Step",
+    "photo": "http://www.lovethispic.com/uploaded_images/167036-Johnny-Depp.jpg",
+    "b_day": "26.03.1995",
+    "spec": "Front-end developer",
+    "experience": 2,
+    "english": "Intermediate",
+    "skills": [
+      {
+        "skill_name": "HTML/HTML5",
+        "level": 10
+      },
+      {
+        "skill_name": "CSS/CSS3",
+        "level": 10
+      },
+      {
+        "skill_name": "SASS,LESS, Stylus",
+        "level": 9
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 9
+      },
+      {
+        "skill_name": "AngularJS",
+        "level": 8
+      },
+      {
+        "skill_name": "C++",
+        "level": 2
+      }
+    ],
+    "phone": 380125487321,
+    "email": "alex_step@gmail.com",
+    "skype": "pole_step"
+  },
+  {
+    "name": "Viktoria Kovalchuk",
+    "photo": "http://img.usmagazine.com/article-leads-vertical-300/1251206288_sandra_bullock_290x402.jpg",
+    "b_day": "05.02.1991",
+    "spec": "Java developer",
+    "experience": 3,
+    "english": "Advanced",
+    "skills": [
+      {
+        "skill_name": "Java",
+        "level": 10
+      },
+      {
+        "skill_name": "Rest",
+        "level": 10
+      },
+      {
+        "skill_name": "Spring",
+        "level": 7
+      },
+      {
+        "skill_name": "MySQL",
+        "level": 10
+      },
+      {
+                "skill_name": "HTML/CSS/JS",
+        "level": 7
+      }
+    ],
+    "phone": 380674582154,
+    "email": "viktoria_kovalchuk@gmail.com",
+    "skype": "vika_vikaaa"
+  },
+
+  {
+    "name": "Mark Viter",
+    "photo": "https://peopledotcom.files.wordpress.com/2017/04/brad-pitt-1.jpg",
+    "b_day": "15.04.1988",
+    "spec": "Back-end developer",
+    "experience": 5,
+    "english": "Upper-Intermediate",
+    "skills": [
+      {
+        "skill_name": "PHP",
+        "level": 10
+      },
+      {
+        "skill_name": "Laravel",
+        "level": 10
+      },
+      {
+        "skill_name": "HTML,CSS",
+        "level": 9
+      },
+      {
+        "skill_name": "JavaScript",
+        "level": 9
+      },
+      {
+        "skill_name": "Yii2",
+        "level": 8
+      },
+      {
+        "skill_name": "Python",
+        "level": 7
+      }
+    ],
+    "phone": 380985552012,
+    "email": "mark_viter@gmail.com",
+    "skype": "holodniyviter"
+  },
+  {
+    "name": "Anton Step",
+    "photo": "http://img.usmagazine.com/article-leads-vertical-300/1250018829_ashton_kutcher_290x402.jpg",
+    "b_day": "21.08.1991",
+    "spec": ".Net developer",
+    "experience": 5,
+    "english": "Upper-Intermediate",
+    "skills": [
+      {
+        "skill_name": ".NET",
+        "level": 10
+      },
+      {
+        "skill_name": "C#",
+        "level": 9
+      },
+      {
+        "skill_name": "Visual Studio",
+        "level": 9
+      },
+      {
+        "skill_name": "TFS",
+        "level": 10
+      },
+      {
+        "skill_name": "HTML/CSS",
+        "level": 7
+      },
+      {
+        "skill_name": "JS",
+        "level": 6
+      }
+    ],
+    "phone": 380781254466,
+    "email": "anton_step@gmail.com",
+    "skype": "step_anton91"
+  }
+]
