@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  min-width: 100%;
+  height: 60px;
+  background: $brown;
+
+  &__title {
+    max-width: $max-width;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: $white;
+    font-size: 3rem;
+  }
+}

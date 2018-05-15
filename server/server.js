@@ -12,6 +12,60 @@ app.get('/', function (req, res) {
   res.send('Hello API');
 });
 
+app.get('/login', function (req, res) {
+  db.get().collection('login').find().toArray(function (err, docs) {
+    if (err) {
+      console.log(err);
+      return res.sendStatus(500);
+    }
+    res.send(docs);
+  });
+});
+
+app.get('/login/:login', function(req, res) {
+  db.get().collection('login').findOne(
+    { login: req.params.login },
+    function (err, doc) {
+      if (err) {
+        console.log(err);
+        return res.sendStatus(500);
+      }
+      res.send(doc);
+    });
+});
+
+app.post('/login', function (req, res) {
+  var user = {
+    user_id: req.body.user_id,
+    login: req.body.login,
+    pass: req.body.pass,
+    status: req.body.status
+  };
+
+  db.get().collection('login').insert(user, function (err, result) {
+    if (err) {
+      console.log(err);
+      return res.sendStatus(500);
+    }
+    console.log(result);
+    res.send(user);
+  });
+});
+
+app.delete('/login/:login', function (req, res) {
+  db.get().collection('login').deleteOne(
+    { login: req.params.login },
+    function (err, result) {
+      if (err) {
+        console.log(err);
+        return res.sendStatus(500);
+      }
+      console.log(result);
+      res.sendStatus(200);
+    }
+  );
+});
+
 app.get('/knowledge-db', function (req, res) {
   db.get().collection('employees').find().toArray(function (err, docs) {
     if (err) {
