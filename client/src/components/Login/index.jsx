@@ -1,9 +1,5 @@
 import React, { PureComponent } from 'react';
 import axios from 'axios';
-import {
-  Link,
-  // withRouter
-} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -22,7 +18,6 @@ class Login extends PureComponent {
       user: {},
       email: '',
       password: '',
-      isValid: false,
     };
   }
 
@@ -44,11 +39,15 @@ class Login extends PureComponent {
   };
 
   setUser = () => {
+    const { dispatch, history } = this.props;
+
     const data = {
       user_id: this.state.user.user_id,
       status: this.state.user.status,
     };
-    this.props.dispatch(load(actionTypes.SET_USER, data));
+
+    dispatch(load(actionTypes.SET_USER, data));
+    history.push(kdb);
   };
 
   checkUser = (e) => {
@@ -58,9 +57,6 @@ class Login extends PureComponent {
       if (
         this.state.email === this.state.user.login &&
         this.state.password === this.state.user.pass) {
-        this.setState({
-          isValid: true,
-        });
         this.setUser();
       }
     }
@@ -71,7 +67,6 @@ class Login extends PureComponent {
       <form
         className="login"
         onChange={this.onChange}
-        onSubmit={this.checkUser}
       >
         { this.state.user === '' ?
           <span className="field-error">
@@ -91,16 +86,9 @@ class Login extends PureComponent {
         />
         <RaisedButton
           className="login__submit"
-          type="submit"
           label="LOGIN"
+          onClick={this.checkUser}
         />
-        { this.state.isValid ?
-          <Link href={kdb} to={kdb} >
-            to DB
-          </Link>
-          :
-          null
-        }
       </form>
     );
   }
@@ -108,6 +96,9 @@ class Login extends PureComponent {
 
 Login.propTypes = {
   dispatch: PropTypes.func.isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }).isRequired,
 };
 
 export default connect()(Login);
