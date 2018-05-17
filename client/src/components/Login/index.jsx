@@ -4,12 +4,16 @@ import {
   Link,
   // withRouter
 } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
+import actionTypes from '../../constants/action-types';
+import load from '../../actions/load';
 import { kdb } from '../../constants/route-urls';
-import { login } from '../../constants/backend-urls';
+import { loginUrl } from '../../constants/backend-urls';
 
 class Login extends PureComponent {
   constructor(props) {
@@ -29,7 +33,7 @@ class Login extends PureComponent {
   };
 
   getUser = (email) => {
-    axios.get(`${login}/${email}`)
+    axios.get(`${loginUrl}/${email}`)
       .then((res) => {
         const user = res.data;
         this.setState({ user });
@@ -37,6 +41,14 @@ class Login extends PureComponent {
       .catch(this.setState({
         user: '',
       }));
+  };
+
+  setUser = () => {
+    const data = {
+      user_id: this.state.user.user_id,
+      status: this.state.user.status,
+    };
+    this.props.dispatch(load(actionTypes.SET_USER, data));
   };
 
   checkUser = (e) => {
@@ -49,6 +61,7 @@ class Login extends PureComponent {
         this.setState({
           isValid: true,
         });
+        this.setUser();
       }
     }
   };
@@ -93,4 +106,8 @@ class Login extends PureComponent {
   }
 }
 
-export default Login;
+Login.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+export default connect()(Login);

@@ -24,7 +24,7 @@ class Database extends PureComponent {
       <main>
         <div className="content_wrapper">
           { this.state.employees.map(employee => (
-            <div key={employee.id} className="user">
+            <div key={employee._id} className="user">
               <div className="user__name"> { employee.name }
               </div>
               <div>
@@ -40,8 +40,11 @@ class Database extends PureComponent {
               <div className="user-skills">
                 <p className="user-skills__title"> Professional skills: </p>
                 { employee.skills.map(skill => (
-                  <p className="user-skills__level"> { skill.skill_name } :
-                    <span className="right clear"> { skill.level } /10</span>
+                  <p
+                    key={skill.skill_name}
+                    className="user-skills__level"
+                  > { skill.skill_name } :
+                    <span className="clear"> { skill.level } /10</span>
                   </p>))}
               </div>
             </div>))}

@@ -1,2 +1,2 @@
-export const root = '/login';
+export const login = '/login';
 export const kdb = '/database';

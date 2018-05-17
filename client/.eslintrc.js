@@ -24,12 +24,13 @@ module.exports = {
         "jest": true
     },
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "single"],
-        "indent": ["error", 2],
-        "eol-last": ["error", "always"],
-        "max-len": [1, 80, 2],
-        "react/no-deprecated": "error",
-        "no-multiple-empty-lines": [2, {"max": 1}]
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "indent": ["error", 2],
+      "eol-last": ["error", "always"],
+      "max-len": [1, 80, 2],
+      "react/no-deprecated": "error",
+      "no-multiple-empty-lines": [2, {"max": 1}],
+      "no-underscore-dangle": ["error", { "allow": ["_id"] }]
     }
 };

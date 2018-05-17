@@ -12,7 +12,7 @@ import Database from './Database';
 import Login from './Login';
 
 import {
-  root,
+  login,
   kdb,
 } from '../constants/route-urls';
 
@@ -22,8 +22,8 @@ const App = () => (
       <div>
         <Header />
         <Switch>
-          <Route path={root} component={Login} exact={false} />
-          <Route path={kdb} component={Database} exact={false} />
+          <Route path={login} component={Login} exact />
+          <Route path={kdb} component={Database} exact />
         </Switch>
       </div>
     </Router>
