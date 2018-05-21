@@ -5,9 +5,14 @@ import {
   Route,
 } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import {
+// lightGreen500,
+  blue500,
+} from 'material-ui/styles/colors';
 
 import '../scss/main.scss';
-import Header from './Header';
+// import Header from './Header';
 import Database from './Database';
 import Login from './Login';
 
@@ -16,16 +21,20 @@ import {
   kdb,
 } from '../constants/route-urls';
 
+const muiTheme = getMuiTheme({
+  fontFamily: 'Courier New, sans-serif',
+  palette: {
+    primary1Color: blue500,
+  },
+});
+
 const App = () => (
-  <MuiThemeProvider >
+  <MuiThemeProvider muiTheme={muiTheme}>
     <Router>
-      <div>
-        <Header />
-        <Switch>
-          <Route path={login} component={Login} exact />
-          <Route path={kdb} component={Database} exact />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path={login} component={Login} exact />
+        <Route path={kdb} component={Database} exact />
+      </Switch>
     </Router>
   </MuiThemeProvider>
 );

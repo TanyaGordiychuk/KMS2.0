@@ -64,32 +64,39 @@ class Login extends PureComponent {
 
   render() {
     return (
-      <form
-        className="login"
-        onChange={this.onChange}
-      >
-        { this.state.user === '' ?
-          <span className="field-error">
-                No such user
-          </span> :
-          null
-        }
-        <TextField
-          className="login__email"
-          name="email"
-          hintText="Email"
-        />
-        <TextField
-          className="login__password"
-          name="password"
-          hintText="Password"
-        />
-        <RaisedButton
-          className="login__submit"
-          label="LOGIN"
-          onClick={this.checkUser}
-        />
-      </form>
+      <div className="login">
+        <div className="login__title">
+          KMS
+        </div>
+        <form
+          className="login-form"
+          onChange={this.onChange}
+        >
+          { this.state.user === '' ?
+            <span className="field-error">
+                  No such user
+            </span> :
+            null
+          }
+          <TextField
+            className="login-form__email"
+            name="email"
+            hintText="Email"
+          />
+          <TextField
+            className="login-form__password"
+            type="password"
+            name="password"
+            hintText="Password"
+          />
+          <RaisedButton
+            className="login-form__button"
+            label="LOGIN"
+            primary
+            onClick={this.checkUser}
+          />
+        </form>
+      </div>
     );
   }
 }

@@ -79,7 +79,7 @@
   },
   {
     "name": "Jessica Wind",
-    "photo": "http://7kingdoms.ru/wp-content/uploads/2011/05/emilia-clarke.jpg",
+    "photo": "https://vignette.wikia.nocookie.net/disney/images/f/f9/Emilia_Clarke.jpg",
     "b_day": "02.01.1990",
     "spec": "Back-end developer",
     "experience": 2,
@@ -116,7 +116,7 @@
   },
   {
     "name": "Mark Jacobs",
-    "photo": "http://www.mypopulars.com/photos/robert-downey-jr/Robert-Downey-Jr-11.jpg",
+    "photo": "https://i.pinimg.com/736x/d4/ea/86/d4ea864374567993be2d39bd765e5dfb--robert-downey-jr-iron-man-robert-downey-jr.jpg",
     "b_day": "28.05.1983",
     "spec": "Java developer",
     "experience": 7,
@@ -157,7 +157,7 @@
   },
   {
     "name": "Whitney Spilberg",
-    "photo": "https://www.wmj.ru/imgs/2016/12/05/07/891360/6e932bb92baa568e9377a874cf75db0aa3c1aa90.jpg",
+    "photo": "http://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2015/11/110415-cameron-diaz.jpg",
     "b_day": "15.09.1991",
     "spec": "QA",
     "experience": 4,
@@ -235,7 +235,7 @@
   },
   {
     "name": "Ivan Shevchenko",
-    "photo": "http://kinoafisha.ua/upload/persons/1120/src_1404335387rayan-reynolds.jpg",
+    "photo": "http://pre-party.com.ua/uploads/2016/Tanya_November/Ryan_Reynolds_GQ_USA/001-Ryan_Reynolds_GQ_USA.jpg",
     "b_day": "14.07.1981",
     "spec": "Java developer",
     "experience": 7,
@@ -272,7 +272,7 @@
   },
   {
     "name": "Mike Oslo",
-    "photo": "http://i3.mirror.co.uk/incoming/article3107497.ece/ALTERNATES/s615b/Heath-Ledger.jpg",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicmwOS6_nBdngU5uIeGewkj6a3Yb5aN3jYg41SXn5k85NjG1D",
     "b_day": "12.10.1988",
     "spec": ".Net developer",
     "experience": 5,
