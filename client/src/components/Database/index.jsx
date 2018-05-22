@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { PropTypes } from 'prop-types';
 import axios from 'axios';
 
 import Header from '../Header';
@@ -19,16 +20,25 @@ class Database extends PureComponent {
         const employees = res.data;
         this.setState({ employees });
       });
+    const btn = document.querySelector('#btn');
+    btn.addEventListener('click', this.props.onClick);
   }
 
   render() {
     return (
-      <div>
+      <div className="content">
         <Header />
         <main>
-          <div className="content_wrapper">
+          <div
+            id="btn"
+            className="content_wrapper"
+          >
             { this.state.employees.map(employee => (
-              <div key={employee._id} className="user">
+              <div
+                data-user-id={employee.id}
+                key={employee._id}
+                className="user"
+              >
                 <div className="user__name"> { employee.name }
                 </div>
                 <div>
@@ -58,5 +68,9 @@ class Database extends PureComponent {
     );
   }
 }
+
+Database.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Database;

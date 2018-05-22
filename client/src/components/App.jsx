@@ -13,7 +13,7 @@ import {
 
 import '../scss/main.scss';
 // import Header from './Header';
-import Database from './Database';
+import DatabaseWrapper from './DatabaseWrapper';
 import Login from './Login';
 
 import {
@@ -33,7 +33,7 @@ const App = () => (
     <Router>
       <Switch>
         <Route path={login} component={Login} exact />
-        <Route path={kdb} component={Database} exact />
+        <Route path={kdb} component={DatabaseWrapper} exact />
       </Switch>
     </Router>
   </MuiThemeProvider>

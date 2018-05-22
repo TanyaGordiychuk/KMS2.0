@@ -1,29 +1,18 @@
-// import React, { PureComponent } from 'react';
-// import axios from 'axios';
-//
-// import { database } from '../../constants/backend-urls';
-//
-// class UserCard extends PureComponent {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       user: {},
-//     };
-//   }
-//
-//   componentDidMount() {
-//     axios.get(`${database}/${id}`)
-//       .then((res) => {
-//         const user = res.data;
-//         this.setState({ user });
-//       });
-//   }
-//
-//   render() {
-//     return (
-//       <h1>User</h1>
-//     );
-//   }
-// }
-//
-// export default UserCard;
+import React from 'react';
+import { PropTypes } from 'prop-types';
+
+const UserCard = ({ user, close }) => (
+  <div>
+    {user}
+    <button onClick={close}>
+      Close
+    </button>
+  </div>
+);
+
+UserCard.propTypes = {
+  user: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  close: PropTypes.func.isRequired,
+};
+
+export default UserCard;
