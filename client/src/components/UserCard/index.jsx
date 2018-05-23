@@ -13,27 +13,24 @@ const UserCard = ({ userArr, close }) => (
         key={user._id}
         className="user-card"
       >
-        <div className="user-card__name"> { user.name }
+        <div className="user-card__name"> { user.name } </div>
+        <div className="user-card__photo">
+          <img src={user.photo} alt={user.name} />
         </div>
-        <div>
-          <div className="user__photo">
-            <img src={user.photo} alt={user.name} />
+        <p className="user-card__spec"> { user.spec } </p>
+        <div className="user-card__info">
+          <p>Experience: { user.experience } years</p>
+          <p>English: { user.english }</p>
+          <div className="user-card-skills">
+            <p className="user-card-skills__title"> Professional skills: </p>
+            { user.skills.map(skill => (
+              <p
+                key={skill.skill_name}
+                className="user-card-skills__level"
+              > { skill.skill_name } :
+                <span className="clear"> { skill.level } /10</span>
+              </p>))}
           </div>
-          <div className="user__info clear">
-            <p className="user__info__spec"> { user.spec }</p>
-            <p>Experience: { user.experience } years</p>
-            <p>English: { user.english }</p>
-          </div>
-        </div>
-        <div className="user-skills">
-          <p className="user-skills__title"> Professional skills: </p>
-          { user.skills.map(skill => (
-            <p
-              key={skill.skill_name}
-              className="user-skills__level"
-            > { skill.skill_name } :
-              <span className="clear"> { skill.level } /10</span>
-            </p>))}
         </div>
       </div>
     ))}

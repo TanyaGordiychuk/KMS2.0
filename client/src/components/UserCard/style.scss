@@ -21,6 +21,46 @@
   &__name {
     background: $brown;
     color: $white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  &__photo {
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-right: 3%;
+
+    &>img {
+      width: 100%;
+    }
+  }
+
+  &__spec {
+    background: $light-brown;
+    color: $white;
     font-size: 1.5rem;
+  }
+
+  &__info {
+    font-size: 16px;
+  }
+
+  &-skills {
+    margin: 2% 5% 2% 1%;
+
+    &__title {
+      font-size: 1.2rem;
+      color: $blue;
+      font-weight: 700;
+    }
+
+    &__level {
+      &>span {
+        float: right;
+        color: $light-brown;
+        font-weight: 700;
+      }
+    }
   }
 }
