@@ -1,0 +1,26 @@
+.user-card {
+
+  &_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $transparent-black;
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  border-radius: $border-radius;
+  min-width: 250px;
+  width: 40%;
+
+  &__name {
+    background: $brown;
+    color: $white;
+    font-size: 1.5rem;
+  }
+}

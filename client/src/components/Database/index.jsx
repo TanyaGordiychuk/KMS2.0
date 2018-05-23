@@ -19,23 +19,26 @@ class Database extends PureComponent {
       .then((res) => {
         const employees = res.data;
         this.setState({ employees });
+        this.handleClick();
       });
-    const btn = document.querySelector('#btn');
-    btn.addEventListener('click', this.props.onClick);
   }
+
+  handleClick = () => {
+    const btns = document.querySelectorAll('.user');
+    btns.forEach(btn => (
+      btn.addEventListener('click', this.props.onClick)
+    ));
+  };
 
   render() {
     return (
       <div className="content">
         <Header />
         <main>
-          <div
-            id="btn"
-            className="content_wrapper"
-          >
+          <div className="content_wrapper">
             { this.state.employees.map(employee => (
               <div
-                data-user-id={employee.id}
+                data-user-id={employee._id}
                 key={employee._id}
                 className="user"
               >

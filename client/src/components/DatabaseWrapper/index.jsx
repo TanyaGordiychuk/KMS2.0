@@ -12,33 +12,29 @@ class DatabaseWrapper extends PureComponent {
     super(props);
     this.state = {
       isReviewUser: false,
-      // isOpened: 0,
-      user: {},
+      userArr: [],
     };
   }
 
   getUserById = (id) => {
-    axios.get(`${database}${id}`)
+    axios.get(`${database}/${id}`)
       .then((res) => {
-        this.setState({
-          user: res.data,
-        });
+        const userArr = [];
+        userArr.push(res.data);
+        this.setState({ userArr });
       });
   };
 
-  showUserCard = ({ target: { dataset: { userId } } }) => {
+  showUserCard = (e) => {
+    const { userId } = e.currentTarget.dataset;
     if (userId) {
+      this.getUserById(userId);
       this.setState({
-        // isReviewUser: true,
-        user: this.getUserById(+userId),
-        // isOpened: 1,
         isReviewUser: true,
       });
-      console.log('click');
     } else {
       this.setState({
         isReviewUser: false,
-        // isOpened: 0,
       });
     }
     return null;
@@ -46,19 +42,18 @@ class DatabaseWrapper extends PureComponent {
 
   closeUserCard = () => {
     this.setState({
-      // isOpened: 0,
       isReviewUser: false,
     });
   };
 
   render() {
-    const { user, isReviewUser } = this.state;
+    const { userArr, isReviewUser } = this.state;
 
     return (
       <div>
         <Database onClick={this.showUserCard} />
         { isReviewUser ?
-          <UserCard user={user} close={this.closeUserCard} />
+          <UserCard userArr={userArr} close={this.closeUserCard} />
           :
           null
         }
