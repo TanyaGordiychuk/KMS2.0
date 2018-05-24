@@ -9,6 +9,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
 // lightGreen500,
   blue500,
+  brown50,
+  brown200,
+  black,
 } from 'material-ui/styles/colors';
 
 import '../scss/main.scss';
@@ -25,6 +28,15 @@ const muiTheme = getMuiTheme({
   fontFamily: 'Courier New, sans-serif',
   palette: {
     primary1Color: blue500,
+    accent1Color: blue500,
+  },
+  tabs: {
+    backgroundColor: brown50,
+    selectedTextColor: black,
+    textColor: brown200,
+  },
+  svgIcon: {
+    color: blue500,
   },
 });
 

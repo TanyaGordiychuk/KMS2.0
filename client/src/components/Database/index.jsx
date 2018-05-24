@@ -60,8 +60,8 @@ class Database extends PureComponent {
                     <p
                       key={skill.skill_name}
                       className="user-skills__level"
-                    > { skill.skill_name } :
-                      <span className="clear"> { skill.level } /10</span>
+                    > { skill.skill_name }:
+                      <span className="clear"> { skill.level }/10</span>
                     </p>))}
                 </div>
               </div>))}
