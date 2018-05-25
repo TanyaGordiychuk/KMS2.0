@@ -18,10 +18,12 @@ import '../scss/main.scss';
 // import Header from './Header';
 import DatabaseWrapper from './DatabaseWrapper';
 import Login from './Login';
+import Account from './Account';
 
 import {
   login,
   kdb,
+  account,
 } from '../constants/route-urls';
 
 const muiTheme = getMuiTheme({
@@ -46,6 +48,7 @@ const App = () => (
       <Switch>
         <Route path={login} component={Login} exact />
         <Route path={kdb} component={DatabaseWrapper} exact />
+        <Route path={`${account}/:id`} component={Account} exact />
       </Switch>
     </Router>
   </MuiThemeProvider>

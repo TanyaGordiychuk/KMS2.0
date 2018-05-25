@@ -3,6 +3,9 @@ import { PropTypes } from 'prop-types';
 
 import { Tabs, Tab } from 'material-ui/Tabs';
 import FlatButton from 'material-ui/FlatButton';
+import Cake from 'material-ui/svg-icons/social/cake';
+import Email from 'material-ui/svg-icons/communication/email';
+import Phone from 'material-ui/svg-icons/communication/phone';
 
 const renderProfInfo = user => (
   <div>
@@ -23,10 +26,26 @@ const renderProfInfo = user => (
 
 const renderPersonalInfo = user => (
   <div>
-    <p>B-day: {user.b_day}</p>
-    <p>Email: {user.email}</p>
-    <p>Phone: {user.phone}</p>
-    <p>Skype: {user.skype}</p>
+    <div className="user-card__info__line">
+      <Cake className="user-card__img" />
+      <span>{user.b_day}</span>
+    </div>
+    <div className="user-card__info__line">
+      <Email className="user-card__img" />
+      <span>{user.email}</span>
+    </div>
+    <div className="user-card__info__line">
+      <Phone className="user-card__img" />
+      <span>{user.phone}</span>
+    </div>
+    <div className="user-card__info__line">
+      <img
+        className="user-card__img"
+        src="src/img/skype.png"
+        alt="skype"
+      />
+      <span>{user.skype}</span>
+    </div>
   </div>
 );
 

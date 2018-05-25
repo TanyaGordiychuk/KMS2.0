@@ -39,7 +39,8 @@ app.post('/login', function (req, res) {
     user_id: req.body.user_id,
     login: req.body.login,
     pass: req.body.pass,
-    status: req.body.status
+    status: req.body.status,
+    photo: req.body.photo,
   };
 
   db.get().collection('login').insert(user, function (err, result) {

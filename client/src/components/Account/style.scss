@@ -1,0 +1,15 @@
+.account {
+  width: 60%;
+  height: 100%;
+  background: $white;
+
+  &__photo {
+    width: 33.333%;
+    float: left;
+
+    &>img {
+      width: 100%;
+    }
+  }
+
+}

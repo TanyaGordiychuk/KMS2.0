@@ -42,8 +42,9 @@ class Login extends PureComponent {
     const { dispatch, history } = this.props;
 
     const data = {
-      user_id: this.state.user.user_id,
+      userId: this.state.user.user_id,
       status: this.state.user.status,
+      photo: this.state.user.photo,
     };
 
     dispatch(load(actionTypes.SET_USER, data));
