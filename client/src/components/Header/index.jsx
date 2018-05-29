@@ -3,11 +3,19 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { account } from '../../constants/route-urls';
+import {
+  kdb,
+  account,
+} from '../../constants/route-urls';
 
 const Header = ({ photo, userId }) => (
   <header className="header">
-    <h1 className="header__title">Knowledge Management System</h1>
+    <Link
+      to={kdb}
+      href={kdb}
+    >
+      <h1 className="header__title">Knowledge Management System</h1>
+    </Link>
     <Link
       to={`${account}/${userId}`}
       className="header__user"

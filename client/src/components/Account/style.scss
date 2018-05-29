@@ -1,15 +1,43 @@
 .account {
+  margin: 0 auto;
   width: 60%;
   height: 100%;
   background: $white;
 
   &__photo {
-    width: 33.333%;
+    width: 33.3333%;
     float: left;
+    margin-bottom: -4px;
 
     &>img {
       width: 100%;
     }
   }
 
+  &__info {
+    width: 66.6666%;
+    float: right;
+
+    &-container {
+      margin-left: 20px;
+    }
+  }
+
+  &__personal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-skills {
+
+    &__name {
+      font-size: 1.3rem;
+
+      &>span {
+        float: right;
+        color: $light-brown;
+        font-weight: 700;
+      }
+    }
+  }
 }
