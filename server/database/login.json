@@ -5,5 +5,13 @@
     "pass": "qwerty",
     "status": "user",
     "photo": "http://yebb.ru/gallery/zak-ehfron/zak-ehfron1.jpg"
+  },
+
+  {
+    "user_id": "5b23a54995ce72117490347b",
+    "login": "mark_viter@gmail.com",
+    "pass": "qwerty",
+    "status": "user",
+    "photo": "https://i.pinimg.com/736x/e9/20/55/e92055a4ca23bf6274b27ab83b60bf76--chris-pratt-chris-delia.jpg"
   }
 ]
