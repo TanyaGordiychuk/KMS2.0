@@ -116,17 +116,21 @@ app.post('/knowledge-db', function (req, res) {
 
 app.put('/knowledge-db/:id', function (req, res) {
   db.get().collection('employees').updateOne(
-    { _id: ObjectID(req.params.id) },
-    { name: req.body.name },
-    { photo: req.body.photo },
-    { b_day: req.body.b_day },
-    { spec: req.body.spec },
-    { experience: req.body.experience },
-    { english: req.body.english },
-    { skills: req.body.skills },
-    { phone: req.body.phone },
-    { email: req.body.email },
-    { skype: req.body.skype },
+    { _id: ObjectID(req.params.id)},
+    {
+      $set: {
+        name: req.body.name,
+        photo: req.body.photo,
+        b_day: req.body.b_day,
+        spec: req.body.spec,
+        experience: req.body.experience,
+        english: req.body.english,
+        skills: req.body.skills,
+        phone: req.body.phone,
+        email: req.body.email,
+        skype: req.body.skype
+      }
+    },
     function (err, result) {
       if (err) {
         console.log(err);
