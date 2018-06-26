@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import axios from 'axios';
 
 import Header from '../Header';
+// import Search from '../Search';
 
 import { database } from '../../constants/backend-urls';
 
@@ -34,6 +35,7 @@ class Database extends PureComponent {
     return (
       <div className="content">
         <Header />
+        { /* <Search /> */ }
         <main>
           <div className="content_wrapper">
             { this.state.employees.map(employee => (

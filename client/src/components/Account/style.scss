@@ -33,10 +33,19 @@
     &__name {
       font-size: 1.3rem;
 
-      &>span {
-        float: right;
-        color: $light-brown;
-        font-weight: 700;
+      //&>span {
+      //  float: right;
+      //  color: $light-brown;
+      //  font-weight: 700;
+      //}
+    }
+
+    &__level {
+      width: 50%;
+      display: inline-block;
+
+      &>div {
+        margin-bottom: 0 !important;
       }
     }
   }
